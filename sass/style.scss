@@ -1,0 +1,24 @@
+/* Variables */
+
+body {
+  border: red solid 1px;
+}
+
+
+$font-logo: 'Allura', cursive;
+$font-title: 'Montserrat', sans-serif;
+$font-subtitle: 'Noto Serif', serif;
+$font-text: 'Roboto Slab', serif;
+
+/* Global */
+
+
+/* Header */
+
+
+.splash {
+  background-image: url("../images/Background_Image.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}

@@ -1,0 +1,14 @@
+/* Variables */
+body {
+  border: red solid 1px;
+}
+
+/* Global */
+/* Header */
+.splash {
+  background-image: url("../images/Background_Image.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
