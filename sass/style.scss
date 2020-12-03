@@ -21,13 +21,93 @@ $font-text: 'Roboto Slab', serif;
 
 /* Global */
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 120px 0;
+}
 
 /* Header */
 
 
 .splash {
-  background-image: url("../images/Background_Image.png");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/Background_Image.png");
   background-position: center center;
   background-size: cover;
   position: relative;
+  height: 100vh;
+  max-width: 1140px;
+  margin: 0 auto;
+
+
+  .navigation {
+
+    h5 {
+      font-family: $font-logo;
+      font-size: 26px;
+      color: $color-yellow;
+      margin: 0;
+      padding-left: 237px;
+      padding-top: 44px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style-type: none;
+
+      float: right;
+      margin: 0;
+      padding-top: 55px;
+
+        li {
+          display: inline-block;
+          padding-right: 40px;
+
+
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            font-family: $font-title;
+            color: $color-white;
+          }
+
+        }
+
+    }
+
+  }
+  .splash-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $color-white;
+
+      h3 {
+        font-size: 40px;
+        font-family: $font-subtitle;
+      }
+
+      h1 {
+        font-size: 75px;
+        font-family: $font-title;
+      }
+
+      .btn {
+        font-size: 18px;
+        font-family: $font-title;
+      }
+  }
 }

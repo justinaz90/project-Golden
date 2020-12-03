@@ -4,11 +4,84 @@ body {
 }
 
 /* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 120px 0;
+}
+
 /* Header */
 .splash {
-  background-image: url("../images/Background_Image.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Background_Image.png");
   background-position: center center;
   background-size: cover;
   position: relative;
+  height: 100vh;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.splash .navigation h5 {
+  font-family: "Allura", cursive;
+  font-size: 26px;
+  color: #FED136;
+  margin: 0;
+  padding-left: 237px;
+  padding-top: 44px;
+  display: inline-block;
+}
+
+.splash .navigation ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding-top: 55px;
+}
+
+.splash .navigation ul li {
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.splash .navigation ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+
+.splash .splash-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.splash .splash-inner h3 {
+  font-size: 40px;
+  font-family: "Noto Serif", serif;
+}
+
+.splash .splash-inner h1 {
+  font-size: 75px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.splash .splash-inner .btn {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
