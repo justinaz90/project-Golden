@@ -21,6 +21,33 @@ section {
   padding: 120px 0;
 }
 
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  font-family: "Noto Serif", serif;
+  color: #777777;
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+  color: #777777;
+}
+
 /* Header */
 .splash {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Background_Image.png");
@@ -94,5 +121,32 @@ section {
   border-radius: 3px;
   text-decoration: none;
   padding: 20px 50px;
+}
+
+/* Services */
+.container {
+  text-align: center;
+}
+
+.container .services-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.container .services-row .services-box {
+  margin: auto 22px;
+  max-width: 350px;
+}
+
+.container .services-row .services-box i {
+  height: 67px;
+  width: 67px;
+  font-size: 35px;
+  color: #FED136;
+  border-radius: 50%;
+  border: 3px solid #FED136;
+  padding-top: 12px;
 }
 /*# sourceMappingURL=style.css.map */
