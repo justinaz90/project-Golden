@@ -43,11 +43,11 @@ section {
 
 .splash {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/Background_Image.png");
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   position: relative;
-  height: 100vh;
-  max-width: 1140px;
+  min-height: 700px;
+  max-width: 1400px;
   margin: 0 auto;
 
 
@@ -58,7 +58,7 @@ section {
       font-size: 26px;
       color: $color-yellow;
       margin: 0;
-      padding-left: 237px;
+      padding-left: 100px;
       padding-top: 44px;
       display: inline-block;
     }
@@ -90,24 +90,36 @@ section {
   .splash-inner {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 56%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: $color-white;
+    width: 100%;
 
       h3 {
         font-size: 40px;
+        font-weight: 300;
         font-family: $font-subtitle;
+        margin: 0 auto;
       }
 
       h1 {
         font-size: 75px;
         font-family: $font-title;
+        margin-top: 20px;
+        margin-bottom: 65px;
       }
 
       .btn {
+        background: $color-yellow;
         font-size: 18px;
+        font-weight: bold;
         font-family: $font-title;
+        color: $color-white;
+        border-radius: 3px;
+        text-decoration: none;
+        padding: 20px 50px;
+
       }
   }
 }
