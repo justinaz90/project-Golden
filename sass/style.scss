@@ -12,6 +12,8 @@ $color-title-portfolio: #333333;
 $color-subtitle-portfolio: #737373;
 $color-black: #000000;
 $color-light-grey: #F7F7F7;
+$color-footer: #212121;
+$color-icons: #0D0D0D;
 
 
 $font-logo: 'Allura', cursive;
@@ -193,7 +195,7 @@ p {
         width: 100%;
         object-fit: cover;
       }
-      
+
       h2 {
         color: $color-title-portfolio;
         padding-top: 10px;
@@ -208,3 +210,65 @@ p {
     }
   }
 }
+
+
+/* Footer */
+
+footer {
+
+padding-top: 50px;
+padding-bottom: 50px;
+
+  p {
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    color: $color-footer;
+    float: left;
+    padding-left: 50px;
+    margin-right: -500px;
+  }
+
+  ul {
+
+
+  font-size: 0px;
+  padding-inline-start: 0px;
+  
+
+    li {
+      padding-left: 10px;
+      display: inline-block;
+
+      i {
+        width: 41px;
+        height: 40px;
+        font-size: 15px;
+        color: $color-white;
+        border-radius: 50%;
+        background: $color-icons;
+        font-size: 15px;
+        padding-top: 13px;
+      }
+    }
+  }
+}
+
+/*
+    .fa-twitter {
+      font-size: 15px;
+      padding-top: 13px;
+    }
+    .fa-facebook-f {
+      font-size: 16px;
+      padding-top: 12px;
+    }
+    .fa-pinterest-p {
+      font-size: 16px;
+      padding-top: 11px;
+    }
+    .fa-google-plus-g {
+      font-size: 16px;
+      padding-top: 12px;
+    } */
