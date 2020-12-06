@@ -236,6 +236,9 @@ footer ul li i {
   .section-title {
     font-size: 30px;
   }
+  .splash {
+    min-height: 500px;
+  }
   .splash .navigation h5 {
     padding-left: 30px;
   }
@@ -248,7 +251,7 @@ footer ul li i {
     padding-top: 15px;
   }
   .splash .splash-inner {
-    top: 53%;
+    top: 65%;
   }
   .splash .splash-inner h3 {
     font-size: 25px;
@@ -287,6 +290,9 @@ footer ul li i {
   section {
     padding: 50px 0;
   }
+  .splash {
+    min-height: 500px;
+  }
   .splash .navigation h5 {
     padding-left: 20px;
   }
@@ -298,14 +304,11 @@ footer ul li i {
     padding-top: 25px;
     padding-right: 10px;
   }
-  .splash .splash-inner {
-    top: 33%;
-  }
   .splash .splash-inner h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .splash .splash-inner h1 {
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 60px;
   }
   .splash .splash-inner .btn {
