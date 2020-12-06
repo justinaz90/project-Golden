@@ -1,8 +1,5 @@
 /* Variables */
 
-body {
-  border: red solid 1px;
-}
 
 $color-white: #FFFFFF;
 $color-title: #222222;
@@ -78,47 +75,47 @@ p {
   max-width: 1400px;
   margin: 0 auto;
 
+  .navigation {
 
-.navigation {
+    h5 {
+      font-family: $font-logo;
+      font-size: 26px;
+      color: $color-yellow;
+      margin: 0;
+      padding-left: 230px;
+      padding-top: 44px;
+      display: inline-block;
+    }
 
-  h5 {
-    font-family: $font-logo;
-    font-size: 26px;
-    color: $color-yellow;
-    margin: 0;
-    padding-left: 230px;
-    padding-top: 44px;
-    display: inline-block;
-  }
+    ul {
+      list-style-type: none;
+      float: right;
+      margin: 0;
+      padding-top: 55px;
+      padding-right: 180px;
 
-  ul {
-    list-style-type: none;
-    float: right;
-    margin: 0;
-    padding-top: 55px;
+        li {
+          display: inline-block;
+          padding-right: 40px;
 
-      li {
-        display: inline-block;
-        padding-right: 40px;
-
-        a {
-          text-decoration: none;
-          font-size: 14px;
-          font-family: $font-title;
-          color: $color-white;
+          a {
+            text-decoration: none;
+            font-size: 14px;
+            font-family: $font-title;
+            color: $color-white;
+          }
         }
       }
     }
-  }
 
-.splash-inner {
-  position: absolute;
-  left: 50%;
-  top: 56%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: $color-white;
-  width: 100%;
+  .splash-inner {
+    position: absolute;
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $color-white;
+    width: 100%;
 
     h3 {
       font-size: 40px;
@@ -183,12 +180,15 @@ p {
   .portfolio-row {
     display: flex;
     flex: 0 0 33.333%;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 75px 50px 75px;
+
 
     .portfolio-box {
       background-color: $color-white;
       padding-bottom: 25px;
+      margin-top: 50px;
 
       img {
         height: 80%;
@@ -215,27 +215,23 @@ p {
 /* Footer */
 
 footer {
-
-padding-top: 50px;
-padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   p {
     font-family: $font-title;
     font-weight: 400;
     font-size: 14px;
-    display: inline-block;
     color: $color-footer;
+    display: inline-block;
     float: left;
     padding-left: 50px;
     margin-right: -500px;
   }
 
   ul {
-
-
-  font-size: 0px;
-  padding-inline-start: 0px;
-  
+    font-size: 0px;
+    padding-inline-start: 0px;
 
     li {
       padding-left: 10px;
@@ -248,27 +244,190 @@ padding-bottom: 50px;
         color: $color-white;
         border-radius: 50%;
         background: $color-icons;
-        font-size: 15px;
-        padding-top: 13px;
+        font-size: 17px;
+        padding-top: 11px;
       }
     }
   }
 }
 
-/*
-    .fa-twitter {
-      font-size: 15px;
-      padding-top: 13px;
+
+
+/* Media */
+
+@media (max-width: 575px) {
+
+  section {
+    padding: 60px 0;
+  }
+
+  .splash {
+
+    .navigation  {
+
+      h5 {
+        padding-left: 30px;
+      }
+
+      ul {
+        padding-right: 0px;
+        padding-top: 25px;
+
+        li {
+          padding-right: 20px;
+          padding-top: 15px;
+        }
+      }
     }
-    .fa-facebook-f {
-      font-size: 16px;
-      padding-top: 12px;
+
+    .splash-inner {
+      top: 53%;
+
+      h3 {
+        font-size: 25px;
+      }
+
+      h1 {
+        font-size: 35px;
+        margin-bottom: 60px;
+      }
+
+      .btn {
+        font-size: 13px;
+        padding: 15px 30px;
+      }
     }
-    .fa-pinterest-p {
-      font-size: 16px;
-      padding-top: 11px;
+  }
+
+  .container .services-row {
+    flex-direction: column;
+
+    .services-box {
+      padding-bottom: 30px;
+      margin: 0 auto;
     }
-    .fa-google-plus-g {
-      font-size: 16px;
-      padding-top: 12px;
-    } */
+  }
+
+  .container .portfolio-row {
+
+
+    .portfolio-box {
+      margin: 20px auto;
+    }
+  }
+
+  footer p {
+      margin-right: 0px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  section {
+    padding: 40px 0;
+  }
+
+  .splash {
+
+    .navigation  {
+
+      h5 {
+        padding-left: 20px;
+      }
+
+      ul {
+        padding-right: 10px;
+        padding-top: 25px;
+
+        li {
+          padding-top: 25px;
+          padding-right: 10px;
+        }
+      }
+    }
+    .splash-inner {
+      top: 33%;
+
+      h3 {
+        font-size: 30px;
+      }
+
+      h1 {
+        font-size: 50px;
+        margin-bottom: 60px;
+      }
+
+      .btn {
+        font-size: 15px;
+        padding: 15px 40px;
+      }
+    }
+  }
+
+  .container .services-row {
+    flex-direction: column;
+
+    .services-box {
+      padding-bottom: 30px;
+      margin: 0 auto;
+    }
+  }
+
+  .container .portfolio-row {
+
+
+    .portfolio-box {
+      margin: 20px auto;
+    }
+  }
+
+  footer p {
+      margin-right: 0px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px){
+
+  .splash {
+
+    .navigation  {
+
+      h5 {
+        padding-left: 30px;
+      }
+
+      ul {
+        padding-right: 10px;
+        padding-top: 25px;
+
+        li {
+          padding-top: 25px;
+          padding-right: 10px;
+        }
+      }
+    }
+    .splash-inner {
+      top: 50%;
+
+      h3 {
+        font-size: 35px;
+      }
+
+      h1 {
+        font-size: 55px;
+      }
+    }
+  }
+
+  .container .portfolio-row {
+
+    .portfolio-box {
+      margin: 20px auto;
+
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+}
